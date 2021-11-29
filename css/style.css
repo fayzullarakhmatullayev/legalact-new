@@ -128,6 +128,11 @@ body {
   background: #E3000F;
 }
 
+.header-menu__logo {
+  display: block;
+  margin-left: 140px;
+}
+
 .header-menu__logo img {
   width: 215px;
 }
