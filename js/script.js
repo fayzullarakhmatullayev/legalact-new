@@ -9,13 +9,15 @@ $(document).ready(function () {
     prevArrow: '<img class="prev-arrow" src="./img/icons/prev-arrow.svg" alt="prev-arrow">',
   })
   $('.service-slider').slick({
+    infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     centerMode: true,
     centerPadding: 0,
     arrows: false,
     dots: true,
+    focusOnSelect: true
   })
 });
