@@ -116,6 +116,11 @@ body {
   color: #E3000F;
 }
 
+.play {
+  width: 128px;
+  height: 128px;
+}
+
 .slick-slider div {
   -webkit-transition: none;
   -o-transition: none;
