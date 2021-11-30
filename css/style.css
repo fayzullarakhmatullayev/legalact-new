@@ -488,7 +488,7 @@ body {
           align-items: center;
 }
 
-.info-about__link img {
+.info-about__link svg {
   margin-right: 20px;
   z-index: 5;
 }
