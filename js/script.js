@@ -18,6 +18,18 @@ $(document).ready(function () {
     centerPadding: 0,
     arrows: false,
     dots: true,
+    focusOnSelect: true,
+  })
+  $('.news-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: 0,
+    arrows: false,
+    dots: true,
     focusOnSelect: true
   })
 });
