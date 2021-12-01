@@ -1135,7 +1135,7 @@ body {
 .subscribe-blog__text {
   max-width: 343px;
   width: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto 33px;
   font-size: 16px;
   line-height: 1.2;
   color: #FFFFFF;
@@ -1564,6 +1564,14 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 20px 30px;
+}
+
+.faq-blog__top ::-moz-selection {
+  background-color: unset;
+}
+
+.faq-blog__top ::selection {
+  background-color: unset;
 }
 
 .faq-blog__top svg {
