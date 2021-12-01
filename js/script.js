@@ -48,4 +48,12 @@ $(document).ready(function () {
   $('.faq-blog__top').click(function(){
     $(this).next().slideToggle(300).parent().toggleClass('faq-active')
   })
+  $('.header-menu__burger').click(function(e){
+    e.preventDefault();
+    $('.menu').slideDown(300)
+  })
+  $('.menu-top__close').click(function(e){
+    e.preventDefault();
+    $('.menu').slideUp(300)
+  })
 });
