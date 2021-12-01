@@ -32,4 +32,20 @@ $(document).ready(function () {
     dots: true,
     focusOnSelect: true
   })
+  $('.partners-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: 0,
+    arrows: false,
+    dots: true,
+    focusOnSelect: true
+  })
+  
+  $('.faq-blog__top').click(function(){
+    $(this).next().slideToggle(300).parent().toggleClass('faq-active')
+  })
 });

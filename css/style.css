@@ -57,6 +57,7 @@ body {
 }
 
 .title h2 {
+  width: 100%;
   position: relative;
   font-weight: 700;
   color: #333333;
@@ -83,6 +84,15 @@ body {
   font-size: 100px;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.title.no-arrow h2 span {
+  top: 50%;
+}
+
+.title.no-arrow h2::after {
+  display: none;
 }
 
 .btn {
@@ -114,6 +124,10 @@ body {
   background: #FFFFFF;
   border-color: #FFFFFF;
   color: #E3000F;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header {
@@ -1170,7 +1184,7 @@ body {
 }
 
 .stuff {
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 
 .stuff-top {
@@ -1390,6 +1404,194 @@ body {
   width: 1px;
   height: 213px;
   background: #E3000F;
+}
+
+.partners {
+  padding-bottom: 100px;
+}
+
+.partners .title {
+  margin-bottom: 75px;
+}
+
+.partners-slider__item {
+  max-width: 338px;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.partners-slider__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.partners-slider .slick-list {
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+.partners-slider .slick-slide {
+  margin: 2px 13px;
+}
+
+.partners-slider .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.partners-slider .slick-dots li {
+  width: 14.2857142857%;
+}
+
+.partners-slider .slick-dots button {
+  width: 100%;
+  display: block;
+  background: #DFDFDF;
+  height: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.partners-slider .slick-dots li.slick-active button {
+  background: #E3000F;
+  border-radius: 1px;
+}
+
+.faq {
+  padding-bottom: 105px;
+}
+
+.faq-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.faq-top__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-top__title span {
+  display: block;
+  height: 68px;
+  width: 10px;
+  background: #E3000F;
+  margin-right: 10px;
+}
+
+.faq-top__title h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333333;
+}
+
+.faq-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq-item {
+  max-width: 705px;
+  width: 100%;
+}
+
+.faq-blog {
+  width: 100%;
+  margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(rgba(242, 242, 242, 0)));
+  background: -o-linear-gradient(top, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+  background: linear-gradient(180deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+  border-radius: 10px;
+}
+
+.faq-blog__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.2;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faq-blog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.faq-blog__top svg {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faq-blog__body {
+  display: none;
+  padding: 0 30px 20px;
+}
+
+.faq-blog__body p {
+  font-size: 14px;
+  color: #8E8E8E;
+  line-height: 1.2;
+  padding-top: 20px;
+}
+
+.faq-blog__body p:first-child {
+  border-top: 1px solid #E2E2E2;
+}
+
+.faq-blog.faq-active svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-blog.faq-active svg path {
+  stroke: #000;
+}
+
+.faq-blog.faq-active .faq-blog__title {
+  color: #E3000F;
 }
 
 @media (max-width: 1540px) {
