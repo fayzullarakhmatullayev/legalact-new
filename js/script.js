@@ -5,6 +5,7 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     autoplaySpeed: 5000,
+    swipeToSlide: true,
     nextArrow: '<img class="next-arrow" src="./img/icons/next-arrow.svg" alt="next-arrow">',
     prevArrow: '<img class="prev-arrow" src="./img/icons/prev-arrow.svg" alt="prev-arrow">',
   })
@@ -18,6 +19,7 @@ $(document).ready(function () {
     centerPadding: 0,
     arrows: false,
     dots: true,
+    swipeToSlide: true,
     focusOnSelect: true,
   })
   $('.news-slider').slick({
@@ -30,12 +32,14 @@ $(document).ready(function () {
     centerPadding: 0,
     arrows: false,
     dots: true,
+    swipeToSlide: true,
     focusOnSelect: true
   })
   $('.partners-slider').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
@@ -48,12 +52,28 @@ $(document).ready(function () {
   $('.faq-blog__top').click(function(){
     $(this).next().slideToggle(300).parent().toggleClass('faq-active')
   })
+  
   $('.header-menu__burger').click(function(e){
     e.preventDefault();
     $('.menu').slideDown(300)
+    $(".light-overlay").fadeIn(300)
   })
-  $('.menu-top__close').click(function(e){
+  
+  $('.menu-top__close, .light-overlay').click(function(e){
     e.preventDefault();
     $('.menu').slideUp(300)
+    $(".light-overlay").fadeOut(300)
   })
+  
+  $('.menu-nav__link').click(function(e){
+    e.preventDefault();
+    let href = $(this).attr('href')
+    
+    $('.menu-nav__link').removeClass('menu-active')
+    $(this).addClass('menu-active')
+    
+    $('.menu-active__links').removeClass('menu-active__links').removeClass('animate__slideInUp')
+    $(href).addClass('menu-active__links').addClass('animate__slideInUp')
+  })
+
 });

@@ -138,6 +138,17 @@ body {
   text-transform: initial !important;
 }
 
+.light-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 8;
+}
+
 .header {
   background-color: #F1F1F1;
 }
@@ -425,6 +436,7 @@ body {
   z-index: 10;
   padding-top: 47px;
   padding-bottom: 70px;
+  overflow: hidden;
 }
 
 .menu-btn {
@@ -553,12 +565,16 @@ body {
 
 .menu-item__wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
+}
+
+.menu-item__wrapper.menu-active__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu-item__list:not(:last-child) {
