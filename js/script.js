@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  new WOW().init();
+  
   $('.header-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -99,5 +101,26 @@ $(document).ready(function () {
     $('.modal-video, .overlay').fadeOut(300)
     $('.modal-content').html('')
   })
-
+  
+  $('.one').click(function(e){
+    e.preventDefault();
+    $('#one .blog-content__info').removeClass('wow').addClass('animate__animated animate__fadeInUp')
+  })
+  
+  $('.blog-top__link').click(function(e){
+    e.preventDefault();
+    let href = $(this).attr('href')
+    $('.blog-top__link').removeClass('blog-active')
+    $(this).addClass('blog-active')
+    
+    $('.blog-content__wrapper').removeClass('blog-content-active').find('.blog-content__info').removeClass('animate__fadeInUp')
+    $(href).addClass('blog-content-active').find('.blog-content__info').addClass('animate__fadeInUp')
+  })
+  
+  $(".counter").counterUp({
+    time: 2000,
+  });
 });
+
+
+

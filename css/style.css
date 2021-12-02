@@ -160,6 +160,10 @@ body {
   z-index: 8;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .header {
   background-color: #F1F1F1;
 }
@@ -996,13 +1000,17 @@ body {
   padding-bottom: 70px;
 }
 
+.blog-content-active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .blog-content__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
 }
 
 .blog-content__media {
