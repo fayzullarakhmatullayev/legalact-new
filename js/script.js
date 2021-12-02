@@ -11,6 +11,7 @@ $(document).ready(function () {
     nextArrow: '<img class="next-arrow" src="./img/icons/next-arrow.svg" alt="next-arrow">',
     prevArrow: '<img class="prev-arrow" src="./img/icons/prev-arrow.svg" alt="prev-arrow">',
   })
+  
   $('.service-slider').slick({
     infinite: true,
     slidesToShow: 5,
@@ -24,6 +25,7 @@ $(document).ready(function () {
     swipeToSlide: true,
     focusOnSelect: true,
   })
+  
   $('.news-slider').slick({
     infinite: true,
     slidesToShow: 4,
@@ -37,6 +39,7 @@ $(document).ready(function () {
     swipeToSlide: true,
     focusOnSelect: true
   })
+  
   $('.partners-slider').slick({
     infinite: true,
     slidesToShow: 4,
@@ -115,6 +118,15 @@ $(document).ready(function () {
     
     $('.blog-content__wrapper').removeClass('blog-content-active').find('.blog-content__info').removeClass('animate__fadeInUp')
     $(href).addClass('blog-content-active').find('.blog-content__info').addClass('animate__fadeInUp')
+  })
+  
+  $('.stuff-top__link').click(function(e){
+    e.preventDefault()
+    let href = $(this).attr('href')
+    $('.stuff-top__link').removeClass('stuff-active')
+    $(this).addClass('stuff-active')
+    $('.stuff-inner').removeClass('stuff-inner-active')
+    $(href).addClass('stuff-inner-active')
   })
   
   $(".counter").counterUp({

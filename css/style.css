@@ -1479,6 +1479,11 @@ body {
 
 .stuff-inner {
   position: relative;
+  display: none;
+}
+
+.stuff-inner-active {
+  display: block;
 }
 
 .stuff-inner::before {
@@ -1561,6 +1566,9 @@ body {
   width: 100%;
   min-height: 409px;
   margin-right: -118px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .stuff-content__text {
