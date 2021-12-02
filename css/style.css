@@ -138,6 +138,17 @@ body {
   text-transform: initial !important;
 }
 
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
 .light-overlay {
   display: none;
   position: absolute;
@@ -174,8 +185,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-menu-top {
   padding-top: 54px;
-  margin-bottom: 240px;
+}
+
+.header-menu-top.header-menu-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 8;
+  -webkit-box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-menu-top.header-menu-scroll .header-menu__logo img {
+  width: 150px;
+}
+
+.header-menu-top.header-menu-scroll .header-menu__phone span,
+.header-menu-top.header-menu-scroll .header-menu__phone,
+.header-menu-top.header-menu-scroll .header-menu__call {
+  color: #333333;
 }
 
 .header-menu__list {
@@ -275,6 +310,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 240px;
 }
 
 .header-social {
@@ -1286,7 +1322,7 @@ body {
   padding: 70px;
   position: relative;
   overflow: hidden;
-  z-index: 5;
+  z-index: 2;
 }
 
 .subscribe-blog .big-circle {
@@ -1457,7 +1493,7 @@ body {
   border-radius: 0px 100px 100px 0px;
   position: relative;
   padding: 59px 0 30px;
-  z-index: 5;
+  z-index: 2;
 }
 
 .stuff-content::before {
@@ -1925,6 +1961,66 @@ body {
 
 .footer-right__social a:not(:last-child) {
   margin-right: 30px;
+}
+
+.modal-video {
+  display: none;
+  max-width: 55%;
+  width: 100%;
+  height: 70%;
+  background: #FFFFFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 15;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.modal-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modal-close span {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: block;
+  height: 1px;
+}
+
+.modal-close span:first-child {
+  background: #E3000F;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal-close span:last-child {
+  background: #000;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1540px) {

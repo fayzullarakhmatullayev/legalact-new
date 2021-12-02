@@ -72,8 +72,32 @@ $(document).ready(function () {
     $('.menu-nav__link').removeClass('menu-active')
     $(this).addClass('menu-active')
     
-    $('.menu-active__links').removeClass('menu-active__links').removeClass('animate__slideInUp')
-    $(href).addClass('menu-active__links').addClass('animate__slideInUp')
+    $('.menu-active__links').removeClass('menu-active__links animate__slideInUp')
+    $(href).addClass('menu-active__links animate__slideInUp')
+  })
+  
+  $(window).bind('scroll', () =>{
+    const scrolled = $(this).scrollTop();
+    if(scrolled > $('.header-menu-top').outerHeight()){
+      $('.header-content').css('margin-top', '350px')
+      $('.header-menu-top').addClass('header-menu-scroll animate__animated animate__fadeInDown')
+    } else {
+      $('.header-content').css('margin-top', '240px')
+      $('.header-menu-top').removeClass('header-menu-scroll animate__animated animate__fadeInDown')
+    }
+  })
+  
+  $('.info-about__link, .blog-content__play').click(e => {
+    e.preventDefault();
+    let youtubeLink = '<iframe src="https://www.youtube.com/embed/I3VCr793OiY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    
+    $('.modal-video, .overlay').fadeIn(300)
+    $('.modal-content').html(youtubeLink)
+  })
+  
+  $('.modal-close, .overlay').click(() => {
+    $('.modal-video, .overlay').fadeOut(300)
+    $('.modal-content').html('')
   })
 
 });
