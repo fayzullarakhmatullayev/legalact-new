@@ -314,12 +314,12 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
-  color: #FFFFFF;
+  color: #E3000F;
 }
 
 .header-menu__phone span {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #333333;
   line-height: 19px;
   margin-right: 10px;
   font-weight: 400;
@@ -327,7 +327,7 @@ body {
 
 .header-menu__call {
   text-decoration: underline;
-  color: #FFFFFF;
+  color: #333333;
   font-size: 14px;
   margin-right: auto;
   display: block;
@@ -519,6 +519,18 @@ body {
 
 .header .header-menu-top {
   padding-top: 54px;
+}
+
+.header .header-menu__phone {
+  color: #FFFFFF;
+}
+
+.header .header-menu__phone span {
+  color: #FFFFFF;
+}
+
+.header .header-menu__call {
+  color: #FFFFFF;
 }
 
 .menu {
