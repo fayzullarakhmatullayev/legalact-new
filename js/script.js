@@ -122,7 +122,7 @@ $(document).ready(function () {
   })
   
   $(".counter").counterUp({
-    time: 1000,
+    time: 1500,
   });
 });
 
