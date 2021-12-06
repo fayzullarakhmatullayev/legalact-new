@@ -53,6 +53,16 @@ $(document).ready(function () {
     dots: true,
     focusOnSelect: true
   })
+  $('.career-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+  })
   
   $('.faq-blog__top').click(function(){
     $(this).next().slideToggle(300).parent().toggleClass('faq-active')
@@ -89,12 +99,12 @@ $(document).ready(function () {
     let youtubeLink = '<iframe src="https://www.youtube.com/embed/I3VCr793OiY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     
     $('.modal-video, .overlay').fadeIn(300)
-    $('.modal-content').html(youtubeLink)
+    $('.modal-video .modal-content').html(youtubeLink)
   })
   
   $('.modal-close, .overlay').click(() => {
-    $('.modal-video, .overlay').fadeOut(300)
-    $('.modal-content').html('')
+    $('.modal-video, .overlay, .modal-career').fadeOut(300)
+    $('.modal-video .modal-content').html('')
   })
   
   $('.one').click(function(e){
@@ -124,6 +134,12 @@ $(document).ready(function () {
   $(".counter").counterUp({
     time: 1500,
   });
+  
+  $('.career-slider__link').click(function(e){
+    e.preventDefault();
+    $('.modal-career').fadeIn(300).css('display', 'flex');
+    $('.overlay').fadeIn(300)
+  })
 });
 
 
