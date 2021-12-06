@@ -2429,8 +2429,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* end about page */
-
 /* news main page */
 
 .news-main {
@@ -2602,6 +2600,109 @@ body {
 
 .news-page__text:not(:first-child) {
   margin-top: 20px;
+}
+
+/* blog page */
+
+.blog-main {
+  margin-bottom: 138px;
+}
+
+.blog-main__subtitle {
+  font-size: 24px;
+  color: #0C0C0C;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.blog-main__text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #0C0C0C;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.blog-main .blog-gray {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(rgba(242, 242, 242, 0)));
+  background: -o-linear-gradient(top, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+  background: linear-gradient(180deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+}
+
+.blog-main .blog-gray .blog-content__date,
+.blog-main .blog-gray .blog-content__title,
+.blog-main .blog-gray .blog-content__text {
+  color: #000;
+}
+
+.blog-main .blog-top {
+  margin-bottom: 91px;
+}
+
+.blog-main .overflow-hidden {
+  height: 432px;
+}
+
+.blog-main .blog-content {
+  padding-bottom: 0;
+  height: 432px;
+}
+
+.blog-main .blog-content__media {
+  margin-top: -67px;
+}
+
+.blog-main .blog-content__play {
+  bottom: 231px;
+}
+
+.blog-main .blog-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-main .blog-media-revert .blog-content__play {
+  right: unset;
+  left: -65px;
+}
+
+.blog-pagination {
+  margin-bottom: 80px;
+}
+
+.blog-page .blog-main__text {
+  margin-bottom: 70px;
+}
+
+.blog-page .news-page__content {
+  max-width: 824px;
+}
+
+.blog-page .blog-content__media {
+  margin: 0;
+}
+
+.blog-page .blog-content__play {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.blog-page .news-main__data {
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.blog-page .news-page__text {
+  line-height: 1.625;
+}
+
+.blog-page .news-page__text:not(:first-child) {
+  margin-top: 30px;
 }
 
 @media (max-width: 1540px) {
