@@ -87,6 +87,7 @@ body {
   color: #333333;
   font-size: 36px;
   line-height: 1.2;
+  margin-bottom: 70px;
 }
 
 .title-shadow h2::after {
@@ -1802,7 +1803,7 @@ body {
 }
 
 .partners {
-  padding-bottom: 100px;
+  padding-bottom: 125px;
 }
 
 .partners .title {
