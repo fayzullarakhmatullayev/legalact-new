@@ -304,6 +304,14 @@ body {
   margin-bottom: 20px;
 }
 
+.service-card-white::after {
+  background: url("../img/card-whitre-bg.png");
+}
+
+.service-card-red::after {
+  background: url("../img/card-red-bg.png");
+}
+
 /* main page */
 
 .header {
@@ -3289,7 +3297,6 @@ body {
 .service-card-white::after {
   content: "";
   display: block;
-  background: url("../../img/card-whitre-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -3333,7 +3340,6 @@ body {
 .service-card-red::after {
   content: "";
   display: block;
-  background: url("../../img/card-red-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
