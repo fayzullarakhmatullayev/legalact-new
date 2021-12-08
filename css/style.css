@@ -1919,12 +1919,12 @@ body {
 }
 
 .faq-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  grid-gap: 30px;
 }
 
 .faq-item {
@@ -2315,20 +2315,16 @@ body {
 }
 
 .about-choose__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-row-gap: 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 65px;
 }
 
 .about-choose__item {
-  width: 49%;
-  margin-bottom: 40px;
   padding: 20px 10px 20px 120px;
   border-left: 2px solid #E3000F;
   position: relative;
@@ -2427,7 +2423,7 @@ body {
 }
 
 .about-stuff {
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .about-stuff__title h2 {
@@ -2439,14 +2435,12 @@ body {
 }
 
 .about-stuff__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  grid-gap: 30px;
 }
 
 .about-stuff__card {
@@ -2454,7 +2448,6 @@ body {
   width: 100%;
   border-radius: 10px 10px 0px 10px;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 .about-stuff__card:hover .about-stuff__social {
@@ -2535,14 +2528,14 @@ body {
 }
 
 .news-main__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  margin-bottom: 50px;
 }
 
 .news-main__card {
@@ -2556,7 +2549,6 @@ body {
   background: #FFFFFF;
   border: 1px solid #E7E7E7;
   min-height: 540px;
-  margin-bottom: 50px;
 }
 
 .news-main__card:hover {
