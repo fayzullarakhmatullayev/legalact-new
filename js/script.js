@@ -140,6 +140,11 @@ $(document).ready(function () {
     $('.modal-career').fadeIn(300).css('display', 'flex');
     $('.overlay').fadeIn(300)
   })
+  
+  $('.service-tab__top').click(function(e){
+    e.preventDefault()
+    $(this).parent().toggleClass('service-tab__active').children('.service-tab__body').slideToggle(300)
+  })
 });
 
 
