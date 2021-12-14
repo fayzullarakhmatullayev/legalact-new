@@ -1,7 +1,7 @@
 $(document).ready(function () {
   new WOW().init();
   
-  $('.header-slider').slick({
+  const headerSlider = $('.header-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -145,8 +145,15 @@ $(document).ready(function () {
     e.preventDefault()
     $(this).parent().toggleClass('service-tab__active').children('.service-tab__body').slideToggle(300)
   })
+  
+  headerSlider.on(('beforeChange'), function(_, _, currentSlide, _){
+    if(currentSlide % 2){
+      $(".header-side__overlay").css('background-color', 'rgba(227,0,15,.8)')
+    } else {
+      $(".header-side__overlay").css('background-color', 'rgba(0,0,0,.8)')
+    }
+  })  
 });
-
 
 
 
