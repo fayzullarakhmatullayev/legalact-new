@@ -149,8 +149,12 @@ $(document).ready(function () {
   headerSlider.on(('beforeChange'), function(_, _, currentSlide, _){
     if(currentSlide % 2){
       $(".header-side__overlay").css('background-color', 'rgba(227,0,15,.8)')
+      $('.header-la').css('background-image', 'url(../img/Union.svg)')
+      $('.header-side').css('background-image', 'url(../img/header-side-bg.jpg)')
     } else {
-      $(".header-side__overlay").css('background-color', 'rgba(0,0,0,.8)')
+      $(".header-side__overlay").css('background-color', 'rgba(0,0,0,0)')
+      $('.header-la').css('background-image', 'url(../img/Union2.svg)')
+      $('.header-side').css('background-image', 'url(../img/header-side-bg2.svg)')
     }
   })  
 });
