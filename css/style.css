@@ -3793,6 +3793,17 @@ body {
   right: -210px;
 }
 
+/* faq page */
+
+.faq-page {
+  padding-bottom: 60px;
+}
+
+.faq-page__content {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 @media (max-width: 1540px) {
   .header-la {
     background-position-x: -65px;
