@@ -3804,6 +3804,180 @@ body {
   padding-bottom: 20px;
 }
 
+/* resume page */
+
+.resume {
+  padding-bottom: 60px;
+}
+
+.resume .btn {
+  max-width: 320px;
+  cursor: pointer;
+}
+
+.resume .title h1 {
+  padding-bottom: 10px;
+}
+
+.resume-subtitle {
+  margin-bottom: 40px;
+}
+
+.resume-form {
+  width: 100%;
+}
+
+.resume-form__top {
+  max-width: 732px;
+  width: 100%;
+}
+
+.resume-form__wrapper {
+  margin-bottom: 20px;
+}
+
+.resume-form__label {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.resume-form__input {
+  width: 100%;
+  padding: 14px 20px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.resume-form__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.resume-form__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.resume-form__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.resume-form__input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.resume-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.resume-form__middle {
+  max-width: 212px;
+  width: 100%;
+}
+
+.resume-form__title {
+  font-weight: 600;
+  color: #E3000F;
+  margin-bottom: 20px;
+}
+
+.resume-form__radio {
+  display: none;
+}
+
+.resume-form__radio:checked + .resume-form__radio_label::before {
+  background: #E3000F;
+  border-color: #E3000F;
+}
+
+.resume-form__radio_label {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
+}
+
+.resume-form__radio_label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  z-index: 5;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  margin-right: 10px;
+}
+
+.resume-form__some {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-form__some p {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.resume-form__inner {
+  position: relative;
+  max-width: 317px;
+  width: 100%;
+  border: 1px solid #E3000F;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.resume-form ::-webkit-file-upload-button {
+  position: relative;
+  padding: 0;
+  height: 48px;
+  width: 168px;
+  background: #E3000F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.resume-form__textarea {
+  width: 100%;
+  padding: 15px 20px 16px;
+  min-height: 200px;
+  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.resume-form__lang {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 60px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.resume-form__lang span {
+  margin-right: 56px;
+}
+
+.resume-form__lang .resume-form__radio_label {
+  margin-right: 20px;
+}
+
 @media (max-width: 1540px) {
   .header-la {
     background-position-x: -65px;

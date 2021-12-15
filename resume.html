@@ -18,8 +18,7 @@
 <body>
   <!-- page -->
   <div class="page">
-    
-    <div class="career">
+    <div class="resume">
       <div class="header-menu-top">
   <div class="container">
     <ul class="header-menu">
@@ -156,143 +155,161 @@
           <a href="career.html" class="breadcrumbs-link breadcrumbs-link__active">Карьера</a>
         </div>
         <div class="title">
-          <h1>Наши <span>Карьера</span></h1>
+          <h1>Онлайн <span>резюме</span></h1>
         </div>
-        <div class="blog-main__subtitle">
-          Широкий спектр услуг, востребованных нашими клиентами, дает возможность построить карьеру в таких областях как финансы и учет, юриспруденция и налогообложение, аудит, информационные технологии, управление персоналом и других. 
-        </div>
-        <div class="career-content">
-          <img src="./img/career-img.jpg" alt="career-img" class="career-content__img">
-          <div class="career-content__info overflow-hidden animate__animated animate__fadeInUp wow">
-            Мы ожидаем от наших сотрудников стремления соответствовать лучшим международным стандартам, быть энергичными и инициативными, работать в команде, всегда достигать результатов
-          </div>
-        </div>
-        <div class="career-info">
-          <div class="career-info__title">
-            Legal<span>Act</span> создает условия для развития
-          </div>
-          <div class="career-info__text">
-            Предоставляемые программы обучения и развития позволяют идти в ногу со временем, быть уверенным в завтрашнем дне.
-            Высокие ожидания компании к своим сотрудникам находятся в полном соответствии с предлагаемыми компенсационными пакетами.
-            Особое значение в корпоративной культуре Беллераж Алинга играет атмосфера открытости, доброжелательности и взаимовыручки. Мы уделяем большое внимание этическим аспектам взаимодействия сотрудников между собой, а также с нашими клиентами и партнёрами.
-          </div>
-        </div>
-        <div class="career-job">
-          <div class="career-job__title">
-            <p>Вакансии в</p> 
-            <img src="./img/footer-logo.svg" alt="footer-logo">
-          </div>
-        </div>
-        <div class="career-slider">
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
-              </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
-                </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
-              </div>
+        <div class="resume-subtitle">Все поля обязательны к заполнению!</div>
+        <form class="resume-form">
+          <div class="resume-form__top">
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="pos">Вакантная должность:</label>
+              <input type="text" id="pos" class="resume-form__input">
+            </div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="name">ФИО:</label>
+              <input type="text" id="name" class="resume-form__input">
             </div>
           </div>
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
-              </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
-                </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
-              </div>
+          <div class="resume-form__middle">
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="dob">Дата рождения:</label>
+              <input type="date" id="dob" class="resume-form__input">
+            </div>
+            <div class="resume-form__title">Контактные данные:</div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="phone">Номер телефона:</label>
+              <input type="text" id="phone" class="resume-form__input">
             </div>
           </div>
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
-              </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
+          <div class="resume-form__bottom">
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="email">Адрес электронной почты:</label>
+              <input type="email" id="email" placeholder="info@my.uz" class="resume-form__input">
+            </div>
+            <div class="resume-form__title">Дополнительная информация:</div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="address">Адрес фактического проживания:</label>
+              <input type="text" id="address" class="resume-form__input">
+            </div>
+            <div class="resume-form__wrapper">
+              <div class="resume-form__label">Семейное положение:</div>
+              <input type="radio" name="status" id="status1" checked class="resume-form__radio">
+              <label class="resume-form__radio_label" for="status1">Состою в браке</label>
+              <input type="radio" name="status" id="status2" class="resume-form__radio">
+              <label class="resume-form__radio_label" for="status2">Не состою</label>
+              <input type="radio" name="status" id="status3" class="resume-form__radio">
+              <label class="resume-form__radio_label" for="status3">Другое</label>
+            </div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="nat">Национальность:</label>
+              <input type="text" id="nat" class="resume-form__input">
+            </div>
+            <div class="resume-form__wrapper">
+              <div class="resume-form__label">Ваше фото:</div>
+              <div class="resume-form__some">
+                <div class="resume-form__inner">
+                  <input type="file" id="file" class="resume-form__file">
                 </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
+                <p>(размер файла не должен превышать 3мб)</p>
               </div>
             </div>
-          </div>
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="edu">Образование:</label>
+              <textarea class="resume-form__textarea" id="edu"></textarea>
+            </div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="experience">Предыдущий опыт работы:</label>
+              <textarea class="resume-form__textarea" id="experience"></textarea>
+            </div>
+            <div class="resume-form__wrapper">
+              <div class="resume-form__label">Степень владения языками:</div>
+              <div class="resume-form__lang">
+                <span>Русский:</span>
+                <input type="radio" name="ru" id="ru1" checked class="resume-form__radio">
+                <label class="resume-form__radio_label" for="ru1">1</label>
+                <input type="radio" name="ru" id="ru2" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="ru2">2</label>
+                <input type="radio" name="ru" id="ru3" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="ru3">3</label>
+                <input type="radio" name="ru" id="ru4" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="ru4">4</label>
+                <input type="radio" name="ru" id="ru5" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="ru5">5</label>
               </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
-                </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
+              <div class="resume-form__lang">
+                <span>Узбексикий:</span>
+                <input type="radio" name="uz" id="uz1" checked class="resume-form__radio">
+                <label class="resume-form__radio_label" for="uz1">1</label>
+                <input type="radio" name="uz" id="uz2" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="uz2">2</label>
+                <input type="radio" name="uz" id="uz3" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="uz3">3</label>
+                <input type="radio" name="uz" id="uz4" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="uz4">4</label>
+                <input type="radio" name="uz" id="uz5" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="uz5">5</label>
+              </div>
+              <div class="resume-form__lang">
+                <span>Английский:</span>
+                <input type="radio" name="en" id="en1" checked class="resume-form__radio">
+                <label class="resume-form__radio_label" for="en1">1</label>
+                <input type="radio" name="en" id="en2" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="en2">2</label>
+                <input type="radio" name="en" id="en3" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="en3">3</label>
+                <input type="radio" name="en" id="en4" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="en4">4</label>
+                <input type="radio" name="en" id="en5" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="en5">5</label>
               </div>
             </div>
-          </div>
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
+            <div class="resume-form__wrapper">
+              <div class="resume-form__label">Степень владения языками:</div>
+              <div class="resume-form__lang">
+                <span>Microsoft Word:</span>
+                <input type="radio" name="word" id="word1" checked class="resume-form__radio">
+                <label class="resume-form__radio_label" for="word1">1</label>
+                <input type="radio" name="word" id="word2" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="word2">2</label>
+                <input type="radio" name="word" id="word3" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="word3">3</label>
+                <input type="radio" name="word" id="word4" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="word4">4</label>
+                <input type="radio" name="word" id="word5" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="word5">5</label>
               </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
-                </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
-              </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
-                </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="career-slider__item">
-              <div class="career-slider__title">
-                Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
-              </div>
-              <div class="career-slider__inner">
-                <div class="career-slider__text">
-                  Работа в составе опытной команды над проектами финансового аутсорсинга
-                </div>
-                <a href="career-page.html" class="career-slider__link">
-                  Подробнее
-                </a>
+              <div class="resume-form__lang">
+                <span>Microsoft Excel:</span>
+                <input type="radio" name="exel" id="exel1" checked class="resume-form__radio">
+                <label class="resume-form__radio_label" for="exel1">1</label>
+                <input type="radio" name="exel" id="exel2" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="exel2">2</label>
+                <input type="radio" name="exel" id="exel3" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="exel3">3</label>
+                <input type="radio" name="exel" id="exel4" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="exel4">4</label>
+                <input type="radio" name="exel" id="exel5" class="resume-form__radio">
+                <label class="resume-form__radio_label" for="exel5">5</label>
               </div>
             </div>
+            <div class="resume-form__title">Черты характера</div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="good">Положительные:</label>
+              <input type="text" id="good" class="resume-form__input">
+            </div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="bad">Отрицательные:</label>
+              <input type="text" id="bad" class="resume-form__input">
+            </div>
+            <div class="resume-form__wrapper">
+              <label class="resume-form__label" for="salary">Предпочтения к зарплате (в сумах):</label>
+              <input type="text" id="salary" class="resume-form__input">
+            </div>
+            <button class="btn" type="submit">Отправить резюме!</button>
           </div>
-        </div>
+        </form>
       </div>
-      
     </div>
+    
     
         <!-- FOOTER -->
     <footer class="footer">
@@ -373,57 +390,7 @@
     <!-- OVERLAYS -->
     <div class="light-overlay"></div>
     <div class="overlay"></div>
-    
-    <!-- MODAL -->
-    <div class="modal-video">
-      <div class="modal-close">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="modal-content"></div>
-    </div>
-    
-    <!-- MODAL CARRER -->
-    <div class="modal-career">
-      <div class="modal-close">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="modal-content">
-        <div class="modal-content__title">
-          Консультант / Старший консультант, Финансовый Аутсорсинг и Консалтинг
-        </div>
-        <div class="modal-content__text">Legal<span>Act</span> ищет квалифицированных кандидатов в Практику Финансового Аутсорсинга и Консалтинга.</div>
-        <div class="modal-content__text">Legal<span>Act</span> входит в ТОП-5 провайдеров финансового аутсорсинга в Узбекистане.</div>
-        <div class="modal-content__text">Нашими клиентами преимущественно являются зарубежные компании, представленные в Узбекистане.</div>
-        <div class="modal-content__wrapper">
-          <div class="modal-content__item">
-            <h3>Ожидания от кандидата:</h3>
-            <ul class="modal-content__ul">
-              <li>Высшее образование</li>
-              <li>Опыт в области бухгалтер…а / Главного бухгалтера</li>
-              <li>Опыт работы в аутсорсинг… является преимуществом</li>
-              <li>Развитые коммуникативные…тные, так и письменные</li>
-              <li>Продвинутый уровень знания английского языка</li>
-            </ul>
-          </div>
-          <div class="modal-content__item">
-            <h3>Задачи</h3>
-            <ul class="modal-content__ul">
-              <li>Работа в составе опытной…финансового аутсорсинга</li>
-              <li>Подготовка бухгалтерской…обязательной отчетности</li>
-              <li>Подготовка финансовой от…а (IFRS, US GAAP и др.)</li>
-              <li>Разработка методологий и учетных политик</li>
-              <li>Методологическая поддерж…ов бухгалтерского учета</li>
-              <li>Контроль за работой друг…витие в качестве лидера</li>
-              <li>Ведение нескольких проектов одновременно</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <button class="btn">связаться с нами</button>
-    </div>
-    
+     
   </div><!-- end-page -->
     
   <!-- SCRIPTS -->
@@ -433,5 +400,5 @@
   <script src="./js/wow.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/script.min.js"></script>
-</body>
-</html>
+  </body>
+  </html>
