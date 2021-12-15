@@ -157,8 +157,6 @@ $(document).ready(function () {
       $('.header-side').css('background-image', 'url(../img/header-side-bg2.svg)')
     }
   })  
-  
-  $('.resume-form #phone').inputmask({mask: '+\\9\\98 (99) 999 99 99'})
 });
 
 
