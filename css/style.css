@@ -157,7 +157,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 48px 0 70px;
+  padding: 134px 0 70px;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
@@ -352,7 +352,7 @@ body {
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-  padding-top: 54px;
+  padding-top: 32px;
 }
 
 .header-menu-top.header-menu-scroll {
@@ -423,12 +423,12 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
-  color: #FFFFFF;
+  color: #E3000F;
 }
 
 .header-menu__phone span {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #333333;
   line-height: 1.2;
   margin-right: 10px;
   font-weight: 400;
@@ -436,7 +436,7 @@ body {
 
 .header-menu__call {
   text-decoration: underline;
-  color: #FFFFFF;
+  color: #333333;
   font-size: 14px;
   margin-right: auto;
   display: block;
@@ -628,6 +628,22 @@ body {
 .header-slider .slick-dots .slick-active button {
   background: #E3000F;
   border: 1px solid #E3000F;
+}
+
+.main-page .header-menu__phone {
+  color: #FFFFFF;
+}
+
+.main-page .header-menu__phone span {
+  color: #FFFFFF;
+}
+
+.main-page .header-menu__call {
+  color: #FFFFFF;
+}
+
+.main-page .header-menu-top {
+  padding-top: 54px;
 }
 
 .menu {
@@ -1824,6 +1840,10 @@ body {
 
 .partners .title {
   margin-bottom: 75px;
+}
+
+.partners .title-shadow {
+  margin-bottom: 70px;
 }
 
 .partners-slider__item {
