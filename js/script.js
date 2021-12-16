@@ -15,14 +15,28 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
     centerMode: true,
     centerPadding: 0,
     arrows: false,
     dots: true,
     swipeToSlide: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1412,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1142,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ]
   })
   
   $('.news-slider').slick({
@@ -79,20 +93,15 @@ $(document).ready(function () {
     $(".light-overlay").fadeOut(300)
   })
   
-  
   $(window).bind('scroll', () =>{
     const scrolled = $(this).scrollTop();
-    if(scrolled > $('.header-menu-top').outerHeight()){
-      $('.header-content').css('margin-top', '350px')
-      $('.breadcrumbs').css('margin-top', '80px')
+    if(scrolled > $('.header-menu-top').outerHeight() - 30){
       $('.header-menu-top').addClass('header-menu-scroll animate__animated animate__fadeInDown')
     } else {
-      $('.header-content').css('margin-top', '240px')
-      $('.breadcrumbs').css('margin-top', '0')
       $('.header-menu-top').removeClass('header-menu-scroll animate__animated animate__fadeInDown')
     }
   })
-  
+
   $('.info-about__link, .blog-content__play').click(e => {
     e.preventDefault();
     let youtubeLink = '<iframe src="https://www.youtube.com/embed/I3VCr793OiY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -148,12 +157,12 @@ $(document).ready(function () {
   headerSlider.on(('beforeChange'), function(_, _, currentSlide, _){
     if(currentSlide % 2 === 1){
       $(".header-side__overlay").css('background-color', 'rgba(227,0,15,.8)')
-      $('.header-la').css('background-image', 'url(../img/Union.svg)')
-      $('.header-side').css('background-image', 'url(../img/header-side-bg.jpg)')
+      $('.header-la').removeClass('la-second')
+      $('.header-side').removeClass('side-second')
     } else {
       $(".header-side__overlay").css('background-color', 'rgba(0,0,0,0)')
-      $('.header-la').css('background-image', 'url(../img/Union2.svg)')
-      $('.header-side').css('background-image', 'url(../img/header-side-bg2.svg)')
+      $('.header-la').addClass('la-second')
+      $('.header-side').addClass('side-second')
     }
   })  
 });
