@@ -15,8 +15,8 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     centerMode: true,
     centerPadding: 0,
     arrows: false,
@@ -50,7 +50,15 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     swipeToSlide: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1172,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ]
   })
   
   $('.partners-slider').slick({
@@ -76,10 +84,19 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
   })
+  $('.stuff-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+  })
   
   $('.faq-blog__top').click(function(){
     $(this).next().slideToggle(300).parent().toggleClass('faq-active')
-    
   })
   
   $('.header-menu__burger').click(function(e){
