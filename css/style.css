@@ -2143,6 +2143,7 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 20px 30px;
+  height: 60px;
 }
 
 .faq-blog__top ::-moz-selection {
@@ -4610,10 +4611,6 @@ body {
 
   .faq {
     padding-bottom: 50px;
-  }
-
-  .faq-blog__top {
-    height: 60px;
   }
 
   .footer {

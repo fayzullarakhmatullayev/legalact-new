@@ -21,7 +21,6 @@ $(document).ready(function () {
     centerPadding: 0,
     arrows: false,
     dots: true,
-    swipeToSlide: true,
     focusOnSelect: true,
     responsive: [
       {
@@ -49,7 +48,6 @@ $(document).ready(function () {
     centerPadding: 0,
     arrows: false,
     dots: true,
-    swipeToSlide: true,
     focusOnSelect: true,
     responsive: [
       {
@@ -65,7 +63,6 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
@@ -91,12 +88,13 @@ $(document).ready(function () {
   $('.partners-slider-mobile').slick({
     arrows: false,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
   })
   $('.career-slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
@@ -106,7 +104,6 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
