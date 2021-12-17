@@ -72,7 +72,25 @@ $(document).ready(function () {
     centerPadding: 0,
     arrows: false,
     dots: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
+  })
+  $('.partners-slider-mobile').slick({
+    arrows: false,
+    dots: true,
   })
   $('.career-slider').slick({
     infinite: true,
