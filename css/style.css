@@ -1948,6 +1948,15 @@ body {
   display: none;
 }
 
+.partners-slider-mobile .slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.partners-slider-mobile .slick-slide {
+  margin: 2px 10px;
+}
+
 .partners-slider-mobile__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
