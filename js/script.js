@@ -110,12 +110,13 @@ $(document).ready(function () {
     dots: true,
   })
   
-  $('.menu-nav__slider').slick({
+  $('#menu-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
   })
+
   
   $('.faq-blog__top').click(function(){
     $(this).next().slideToggle(300).parent().toggleClass('faq-active')
@@ -126,6 +127,7 @@ $(document).ready(function () {
     $(this).addClass('menu-top__close')
     $('.menu').slideDown(300)
     $(".light-overlay").fadeIn(300)
+    $('#menu-slider').get(0).slick.setPosition()
   })
   
   $('.menu-top__close, .light-overlay').click(function(e){

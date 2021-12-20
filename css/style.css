@@ -648,8 +648,6 @@ body {
 .menu {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background: #333333;
   z-index: 10;
@@ -777,11 +775,15 @@ body {
 }
 
 .menu-nav__slider {
-  display: none;
+  width: 100% !important;
+  position: relative;
+  height: 0px;
+  overflow-y: hidden;
 }
 
 .menu-nav__slider .menu-item {
   margin: 20px auto 0 !important;
+  width: 100%;
 }
 
 .menu-nav__slider .slick-dots {
@@ -4650,6 +4652,8 @@ body {
   .menu {
     padding-top: 20px;
     padding-bottom: 46px;
+    overflow-y: scroll;
+    max-height: 100vh;
   }
 
   .menu-top {
@@ -4688,8 +4692,8 @@ body {
   }
 
   .menu-nav__slider {
-    display: block;
-    width: 100%;
+    height: auto;
+    overflow-y: visible;
   }
 
   .menu-nav__list {
