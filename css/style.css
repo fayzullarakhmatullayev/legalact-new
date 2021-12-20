@@ -648,6 +648,8 @@ body {
 .menu {
   display: none;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background: #333333;
   z-index: 10;
@@ -1032,9 +1034,9 @@ body {
   z-index: 4;
   background: rgba(227, 0, 15, 0.8);
   opacity: 0;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .service-slider__item svg {
@@ -1408,6 +1410,9 @@ body {
   z-index: 4;
   background: rgba(227, 0, 15, 0.8);
   opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .news-slider__bg {
