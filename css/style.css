@@ -4650,7 +4650,7 @@ body {
     padding-top: 20px;
     padding-bottom: 46px;
     overflow-y: scroll;
-    max-height: 92vh;
+    max-height: 100vh;
   }
 
   .menu-top {
