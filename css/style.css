@@ -775,10 +775,7 @@ body {
 }
 
 .menu-nav__slider {
-  width: 100% !important;
-  position: relative;
-  height: 0px;
-  overflow-y: hidden;
+  display: none;
 }
 
 .menu-nav__slider .menu-item {
@@ -4653,7 +4650,7 @@ body {
     padding-top: 20px;
     padding-bottom: 46px;
     overflow-y: scroll;
-    max-height: 100vh;
+    max-height: 90vh;
   }
 
   .menu-top {
@@ -4692,8 +4689,7 @@ body {
   }
 
   .menu-nav__slider {
-    height: auto;
-    overflow-y: visible;
+    display: block;
   }
 
   .menu-nav__list {
