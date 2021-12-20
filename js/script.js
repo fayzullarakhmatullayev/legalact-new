@@ -22,11 +22,13 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     focusOnSelect: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 1412,
         settings: {
           slidesToShow: 4,
+          swipeToSlide: false,
         }
       },
       {
@@ -49,11 +51,13 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     focusOnSelect: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 1172,
         settings: {
           slidesToShow: 3,
+          swipeToSlide: false,
         }
       },
     ]
@@ -70,11 +74,13 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     focusOnSelect: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
+          swipeToSlide: false,
         }
       },
       {
