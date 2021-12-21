@@ -230,14 +230,27 @@ $(document).ready(function () {
        $('.about-choose__wrapper').addClass('about-choose__tab')
        $('.about-choose__item').removeClass('wow animate__animated animate__fadeInUp')
        $('.about-choose__text').css('display', 'none')
+       $('.service-sidebar__menu').css('display', 'none')
      }
      else{
       $('.about-choose__wrapper').removeClass('about-choose__tab')
       $('.about-choose__item').addClass('wow animate__animated animate__fadeInUp')
       $('.about-choose__title').parent().removeClass('about-choose__open').children('.about-choose__text').css('display', 'block')
+      $('.service-sidebar__menu').css('display', 'block')
      }
     }).resize();
  });
+  $(function(){
+    $(window).bind("resize",function(){
+     if($(this).width() < 1199){
+       $('.service-sidebar__menu').css('display', 'none')
+     }
+     else{
+      $('.service-sidebar__menu').css('display', 'block')
+     }
+    }).resize();
+ });
+ 
  $('.about-choose__title').click(function(){
   if($(window).width() < 991) {
     $(this).parent().toggleClass('about-choose__open').children('.about-choose__text, .about-choose__bg').slideToggle(300)
@@ -246,8 +259,6 @@ $(document).ready(function () {
  $('.service-sidebar').click(function(){
   if($(window).width() < 1199) {
     $('.service-sidebar__menu').slideToggle(300)
-  } else {
-    $('.service-sidebar__menu').show()
   }
  })
  
