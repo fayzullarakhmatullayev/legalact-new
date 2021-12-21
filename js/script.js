@@ -122,6 +122,14 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
   })
+  $('.about-stuff__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  })
 
   
   $('.faq-blog__top').click(function(){
@@ -234,7 +242,7 @@ $(document).ready(function () {
  });
  $('.about-choose__title').click(function(){
   if($(window).width() < 991) {
-    $(this).parent().toggleClass('about-choose__open').children('.about-choose__text').slideToggle(300)
+    $(this).parent().toggleClass('about-choose__open').children('.about-choose__text, .about-choose__bg').slideToggle(300)
   }
  })
  
