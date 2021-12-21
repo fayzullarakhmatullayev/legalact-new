@@ -6133,6 +6133,15 @@ body {
     padding: 30px 0;
   }
 
+  .blog-main__subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .blog-main__text {
+    font-size: 14px;
+  }
+
   .blog-main .blog-content__play {
     bottom: -35px;
   }
