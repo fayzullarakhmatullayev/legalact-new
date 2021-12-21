@@ -28,7 +28,6 @@ $(document).ready(function () {
         breakpoint: 1412,
         settings: {
           slidesToShow: 4,
-          swipeToSlide: false,
         }
       },
       {
@@ -57,7 +56,6 @@ $(document).ready(function () {
         breakpoint: 1172,
         settings: {
           slidesToShow: 3,
-          swipeToSlide: false,
         }
       },
     ]
@@ -80,7 +78,6 @@ $(document).ready(function () {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          swipeToSlide: false,
         }
       },
       {
@@ -114,6 +111,7 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
+    swipeToSlide: true,
   })
   
   $('#menu-slider').slick({

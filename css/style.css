@@ -2470,6 +2470,7 @@ body {
 /* about page */
 
 .about-header {
+  background: #fff;
   padding-bottom: 70px;
 }
 
@@ -3537,6 +3538,10 @@ body {
 
 /* service page */
 
+.service-main {
+  background: #fff;
+}
+
 .service-main__subtitle {
   font-size: 24px;
   color: #0C0C0C;
@@ -3675,6 +3680,10 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-bottom: 100px;
+}
+
+.service-page-header.header {
+  background: none;
 }
 
 .service-sidebar {
@@ -4364,6 +4373,12 @@ body {
   }
 }
 
+@media (max-width: 1433px) {
+  .service-sidebar {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 1404px) {
   .blog-circle {
     display: none;
@@ -4701,6 +4716,10 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+
+  .service-calc__board {
+    margin-left: 20px;
   }
 
   .about-header__title {
@@ -5716,6 +5735,10 @@ body {
   .service-card__title {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+
+  .service-card__text {
+    font-size: 14px;
   }
 }
 
