@@ -243,6 +243,13 @@ $(document).ready(function () {
     $(this).parent().toggleClass('about-choose__open').children('.about-choose__text, .about-choose__bg').slideToggle(300)
   }
  })
+ $('.service-sidebar').click(function(){
+  if($(window).width() < 1199) {
+    $('.service-sidebar__menu').slideToggle(300)
+  } else {
+    $('.service-sidebar__menu').show()
+  }
+ })
  
  
 });
