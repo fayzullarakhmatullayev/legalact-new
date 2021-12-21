@@ -3027,7 +3027,12 @@ body {
 /* blog page */
 
 .blog-main {
-  margin-bottom: 138px;
+  margin-bottom: 30px;
+}
+
+.blog-main.header {
+  background: none;
+  margin-bottom: 30px;
 }
 
 .blog-main__subtitle {
@@ -3044,7 +3049,6 @@ body {
   line-height: 1.2;
   color: #0C0C0C;
   font-weight: 400;
-  margin-bottom: 30px;
 }
 
 .blog-main .blog-gray {
@@ -3057,6 +3061,11 @@ body {
 .blog-main .blog-gray .blog-content__title,
 .blog-main .blog-gray .blog-content__text {
   color: #000;
+}
+
+.blog-main .blog-media-revert {
+  margin-right: 0;
+  margin-left: 70px;
 }
 
 .blog-main .blog-top {
@@ -3093,6 +3102,7 @@ body {
 
 .blog-pagination {
   margin-bottom: 80px;
+  margin-top: 140px;
 }
 
 .blog-page .blog-main__text {
@@ -5347,6 +5357,54 @@ body {
     margin-bottom: 0;
   }
 
+  .blog-main {
+    margin-bottom: 97px;
+  }
+
+  .blog-main .blog-content {
+    padding-bottom: 30px;
+  }
+
+  .blog-main .blog-content__btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .blog-main .blog-content__play {
+    bottom: -64px;
+  }
+
+  .blog-main .blog-gray .blog-content__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .blog-main .blog-gray .blog-content__play {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+
+  .blog-main .blog-media-revert {
+    margin-left: 0;
+  }
+
+  .blog-main .overflow-hidden {
+    height: auto;
+  }
+
+  .blog-main .blog-content {
+    height: auto;
+  }
+
+  .blog-pagination {
+    margin: -30px auto 70px;
+  }
+
   .service-items {
     padding-bottom: 50px;
   }
@@ -5995,6 +6053,10 @@ body {
     font-size: 24px;
   }
 
+  .news-main {
+    padding-bottom: 50px;
+  }
+
   .news-main__wrapper {
     grid-template-columns: minmax(200px, 460px);
     -webkit-box-pack: center;
@@ -6055,6 +6117,7 @@ body {
   .news-page__img {
     height: 246px;
     margin-bottom: 10px;
+    border-radius: 10px;
   }
 
   .news-page__text {
@@ -6068,6 +6131,14 @@ body {
   .news-page .news {
     background: #fff;
     padding: 30px 0;
+  }
+
+  .blog-main .blog-content__play {
+    bottom: -35px;
+  }
+
+  .blog-main .blog-content__info {
+    padding-top: 58px;
   }
 
   .service-main__subtitle {
