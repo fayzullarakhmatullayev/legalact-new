@@ -4650,6 +4650,9 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .about-choose .stuff-info__list {
@@ -5630,10 +5633,11 @@ body {
 
   .about-info__media {
     max-width: 100px;
+    margin-left: 0;
   }
 
   .about-choose {
-    padding: 20px 0 50px;
+    padding: 20px 0 30px;
   }
 
   .about-choose .title {
