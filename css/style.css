@@ -214,6 +214,7 @@ body {
 }
 
 .not-found {
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -5112,6 +5113,48 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .not-found__title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .not-found__title span {
+    font-size: 100px;
+  }
+
+  .not-found__title span:first-child {
+    margin-right: -20px;
+  }
+
+  .not-found__title span:last-child {
+    margin-left: -20px;
+  }
+
+  .not-found__circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .not-found__inner {
+    width: 87px;
+    height: 87px;
+  }
+
+  .not-found__inner img {
+    width: 48px;
+  }
+
+  .not-found__subtitle {
+    margin-top: 30px;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .not-found__text {
+    font-size: 18px;
+  }
+
   .header-la {
     background-position-y: center;
   }
