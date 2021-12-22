@@ -4229,11 +4229,6 @@ body {
   background: unset;
 }
 
-.resume .btn {
-  max-width: 320px;
-  cursor: pointer;
-}
-
 .resume .title h1 {
   padding-bottom: 10px;
 }
@@ -4395,6 +4390,11 @@ body {
 
 .resume-form__lang .resume-form__radio_label {
   margin-right: 20px;
+}
+
+.resume-form__bottom .btn {
+  max-width: 320px;
+  cursor: pointer;
 }
 
 .resume-status {
@@ -6815,10 +6815,6 @@ body {
     text-align: center;
   }
 
-  .resume .btn {
-    margin: 0 auto;
-  }
-
   .resume-form__wrapper {
     margin-bottom: 10px;
   }
@@ -6858,6 +6854,10 @@ body {
 
   .resume-form__lang .resume-form__radio_label {
     margin-right: 10px;
+  }
+
+  .resume-form__bottom .btn {
+    margin: 0 auto;
   }
 }
 
