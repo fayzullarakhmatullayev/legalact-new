@@ -4210,6 +4210,10 @@ body {
   padding-bottom: 60px;
 }
 
+.faq-page.header {
+  background: unset;
+}
+
 .faq-page__content {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -4219,6 +4223,10 @@ body {
 
 .resume {
   padding-bottom: 60px;
+}
+
+.resume.header {
+  background: unset;
 }
 
 .resume .btn {
@@ -4387,6 +4395,25 @@ body {
 
 .resume-form__lang .resume-form__radio_label {
   margin-right: 20px;
+}
+
+.resume-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.resume-status .resume-form__label {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 @media (max-width: 1634px) {
@@ -5559,6 +5586,7 @@ body {
 
   .modal-career {
     overflow-y: scroll;
+    min-height: 620px;
     height: 620px;
     padding: 30px 20px 20px;
   }
@@ -6488,6 +6516,10 @@ body {
     margin-bottom: 20px;
   }
 
+  .modal-content__ul li {
+    font-size: 14px;
+  }
+
   .service-main__subtitle {
     font-size: 16px;
     margin-bottom: 10px;
@@ -6777,6 +6809,55 @@ body {
   .news-slider .slick-list {
     margin-left: -45%;
     margin-right: -45%;
+  }
+
+  .resume {
+    text-align: center;
+  }
+
+  .resume .btn {
+    margin: 0 auto;
+  }
+
+  .resume-form__wrapper {
+    margin-bottom: 10px;
+  }
+
+  .resume-form__label {
+    font-size: 14px;
+  }
+
+  .resume-form__middle {
+    max-width: 100%;
+  }
+
+  .resume-form__some {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .resume-form__inner {
+    max-width: 302px;
+  }
+
+  .resume-form__inner {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .resume-form__lang {
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .resume-form__lang span {
+    margin-right: 20px;
+  }
+
+  .resume-form__lang .resume-form__radio_label {
+    margin-right: 10px;
   }
 }
 
